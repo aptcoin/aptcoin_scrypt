@@ -1,11 +1,11 @@
 from distutils.core import setup, Extension
 
-ltc_scrypt_module = Extension('ltc_scrypt',
-                               sources = ['scryptmodule.c',
-                                          'scrypt.c'],
+apt_scrypt_module = Extension('apt_scrypt',
+                               sources = ['scryptmodule.cpp',
+                                          'scrypt.cpp'],
                                include_dirs=['.'])
 
-setup (name = 'ltc_scrypt',
+setup (name = 'apt_scrypt',
        version = '1.0',
-       description = 'Bindings for scrypt proof of work used by Litecoin',
-       ext_modules = [ltc_scrypt_module])
+       description = 'Bindings for scrypt-nm proof of work used by Aptcoin',
+       ext_modules = [apt_scrypt_module])
